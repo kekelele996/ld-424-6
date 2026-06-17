@@ -4,7 +4,7 @@ import { Role } from '../types/enums';
 import { AuthenticatedRequest } from '../types/interfaces';
 
 const writeMethods = new Set(['POST', 'PATCH', 'PUT', 'DELETE']);
-const managerPaths = ['/stock-ins', '/inventory-checks', '/usage-records/approve'];
+const managerPaths = ['/stock-ins', '/inventory-checks', '/usage-records/approve', '/loss-records/approve', '/loss-records/reject'];
 
 @Injectable()
 export class RbacMiddleware implements NestMiddleware {
